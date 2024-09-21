@@ -1,6 +1,7 @@
 import { Button, StyleSheet, Text, View } from "react-native";
 import { useCounterStore } from "../store/store";
 import { useContext } from "react";
+import ComponentA from "../components/ComponentA";
 
 export default function Page() {
 
@@ -15,8 +16,7 @@ export default function Page() {
 
       <Text >{counter}</Text>
 
-      <Button title="Increment" onPress={increment} />
-      <Button title="Decrement" onPress={decrement} />
+      <ComponentA />
 
     </View>
   );
